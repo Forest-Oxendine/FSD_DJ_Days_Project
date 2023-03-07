@@ -12,11 +12,15 @@ let moreAlbumsMessage = "You need more albums!";
 let playMusicMessage = "Let's start playing music!";
 
 // insert your code here
-for ( let i = 0; i < 10; count++ ) {
-  
+for ( let i = 0; i < albums.length; i++ ) {
+  html += `
+  <h2>${albums[i].name}</h2>
+  <h3>${albums[i].artist}</h3>
+  <p>${albums[i].genre}</p>
+  `;
 }
 
-if ( i < 10 ) {
+if ( albums.length < 10 ) {
     document.querySelector('header').insertAdjacentHTML('beforeend', `<h4>${moreAlbumsMessage}</h4>`);
 } else {
     document.querySelector('header').insertAdjacentHTML('beforeend', `<h4>${playMusicMessage}</h4>`);

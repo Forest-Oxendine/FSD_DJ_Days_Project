@@ -5,10 +5,29 @@
 
   Optionally, you can also add an "artwork" property with an image of the album cover.
 */
-const album = [
-  ['Stick Season', 'Noah Kahn', 'Folk'],
-  ['Bon Iver', 'Bon Iver', 'Indie'],
-  ['Crazy Sexy Cool', 'TLC', 'Hip Hop'],
-  ['Boys II Men', 'Boys II Men', 'R&B'],
-  ['Coming Home', 'Leon Bridges', 'Soul']
+const albums = [
+  { name: 'Stick Season',
+   artist: 'Noah Kahn',
+   genre: 'Folk'
+  },
+   {
+     name: 'Bon Iver',
+   artist: 'Bon Iver',
+   genre: 'Indie'
+  },
+   {
+     name: 'Crazy Sexy Cool',
+   artist: 'TLC',
+   genre: 'Hip Hop'
+  },
+   {
+     name: 'Boys II Men',
+   artist: 'Boys II Men',
+   genre: 'R&B'
+  },
+   {
+     name: 'Coming Home',
+   artist: 'Leon Bridges',
+   genre: 'Soul'
+  }
 ];
