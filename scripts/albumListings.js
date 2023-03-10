@@ -10,7 +10,7 @@
 let html = '';
 let moreAlbumsMessage = "You need more albums!";
 let playMusicMessage = "Let's start playing music!";
-let favorite = "Top 3 Favorite!"
+
 // insert your code here
 for ( let i = 0; i < albums.length; i++ ) {
   html += `
@@ -18,6 +18,14 @@ for ( let i = 0; i < albums.length; i++ ) {
   <h3>${albums[i].artist}</h3>
   <p>${albums[i].genre}</p>
   `;
+let topThree = albums[i].topThree;
+  if ( topThree ) {
+    html += `
+    <p>Top 3 Favorite!</p>
+    `;
+    console.log('The topThree is working!');
+  }
+
 }
 
 
@@ -31,11 +39,7 @@ if ( albums.length < 10 ) {
 
 
 
-if ( albums.length < 10 ) {
-  document.querySelector('main').insertAdjacentHTML('beforeend', `<p>"Top 3 Favorites!"</p>`);
-} else if ( albums[i].topThree ) {
-  document.querySelector('main').insertAdjacentHTML('beforeend', `<p>${favorite}</p>`);
-}
+
 
 
 
