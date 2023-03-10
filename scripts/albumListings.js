@@ -10,21 +10,34 @@
 let html = '';
 let moreAlbumsMessage = "You need more albums!";
 let playMusicMessage = "Let's start playing music!";
-
+let favorite = "Top 3 Favorite!"
 // insert your code here
 for ( let i = 0; i < albums.length; i++ ) {
   html += `
   <h2>${albums[i].name}</h2>
   <h3>${albums[i].artist}</h3>
   <p>${albums[i].genre}</p>
-  <p>${albums[i].favorite}</p>
   `;
 }
+
+
 
 if ( albums.length < 10 ) {
     document.querySelector('header').insertAdjacentHTML('beforeend', `<h4>${moreAlbumsMessage}</h4>`);
 } else {
     document.querySelector('header').insertAdjacentHTML('beforeend', `<h4>${playMusicMessage}</h4>`);
 }
+
+
+
+
+if ( albums.length < 10 ) {
+  document.querySelector('main').insertAdjacentHTML('beforeend', `<p>"Top 3 Favorites!"</p>`);
+} else if ( albums[i].topThree ) {
+  document.querySelector('main').insertAdjacentHTML('beforeend', `<p>${favorite}</p>`);
+}
+
+
+
 
 document.querySelector('main').insertAdjacentHTML('beforeend', html);
