@@ -16,13 +16,13 @@ for ( let i = 0; i < albums.length; i++ ) {
   html += `
   <h2> Album: ${albums[i].name}</h2>
   <h3> Artist: ${albums[i].artist}</h3>
-  <p>${albums[i].genre}</p>
+  <p class= "stylefolk">${albums[i].genre}</p>
   <img src="${albums[i].artwork}" alt="${albums[i].name}"></img>
   `;
 let topThree = albums[i].topThree;
   if ( topThree ) {
     html += `
-    <p>Top 3 Favorite!</p>
+    <p class= "three">Top 3 Favorite!</p>
     `;
     console.log('The topThree is working!');
   }

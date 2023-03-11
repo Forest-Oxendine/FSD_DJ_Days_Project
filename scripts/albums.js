@@ -72,7 +72,7 @@ const albums = [
    topThree: true
   },
    {
-     name: 'Mo Thugs III: The Mothership',
+     name: 'The Mothership',
    artist: 'Layzie Bone',
    genre: 'Rap',
    artwork: 'img/Mo_Thugs.jpeg',
