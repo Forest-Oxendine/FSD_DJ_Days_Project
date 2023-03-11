@@ -14,9 +14,10 @@ let playMusicMessage = "Let's start playing music!";
 // insert your code here
 for ( let i = 0; i < albums.length; i++ ) {
   html += `
-  <h2>${albums[i].name}</h2>
-  <h3>${albums[i].artist}</h3>
+  <h2> Album: ${albums[i].name}</h2>
+  <h3> Artist: ${albums[i].artist}</h3>
   <p>${albums[i].genre}</p>
+  <img src="${albums[i].artwork}" alt="${albums[i].name}"></img>
   `;
 let topThree = albums[i].topThree;
   if ( topThree ) {
