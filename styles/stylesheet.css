@@ -11,7 +11,7 @@
   }
   
   h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Climate Crisis', cursive;
     text-align: center;
     font-weight: 400;
@@ -60,10 +60,13 @@
 
   .stylefolk{
     color: orange;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 23px;
+
   }
 
   .three{
     color:aqua;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
   }
